@@ -1,0 +1,74 @@
+- name: Azure 混合文档
+  href: index.yml
+- name: 概述
+  items:
+    - name: 混合模式和解决方案示例
+      href: overview-patterns-solution-examples.md
+- name: 模式
+  items:
+    - name: Single
+      items:
+        - name: 跨云缩放
+          href: pattern-cross-cloud-scale.md
+        - name: DevOps 混合 CI/CD
+          href: pattern-cicd-pipeline.md
+        - name: 地区分布式应用
+          href: pattern-geo-distributed.md
+        - name: 混合中继
+          href: pattern-hybrid-relay.md
+        - name: 分层数据
+          href: pattern-tiered-data-analytics.md
+        - name: 在边缘训练 ML 模型
+          href: pattern-train-ml-model-at-edge.md
+    - name: 多
+      items:
+        - name: 跨云缩放（本地数据）
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: 客流量检测（零售）
+          href: pattern-retail-footfall-detection.md
+        - name: 边缘的脱销检测
+          href: pattern-out-of-stock-at-edge.md
+- name: 解决方案部署指南
+  items:
+    - name: 跨云缩放
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: 跨云缩放（本地数据）
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: DevOps 混合 CI/CD
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: 客流量检测（零售）
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: 地区分布式应用
+      href: solution-deployment-guide-geo-distributed.md
+    - name: 混合连接
+      href: solution-deployment-guide-connectivity.md
+    - name: 混合标识
+      href: solution-deployment-guide-identity.md
+    - name: 混合中继
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: 分层数据
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: 高可用性 MongoDB
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: 高可用性 SQL Server 2016
+      href: solution-deployment-guide-sql-ha.md
+    - name: 在边缘脱销
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: 在边缘培训 ML 模型
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: 概念
+  items:
+    - name: 混合应用设计注意事项
+      href: overview-app-design-considerations.md
+- name: 相关内容
+  items:
+    - name: Azure 文档
+      href: /azure
+    - name: Azure Stack 文档
+      href: /azure-stack
+- name: 资源
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft 问答
+      href: /answers/products/
