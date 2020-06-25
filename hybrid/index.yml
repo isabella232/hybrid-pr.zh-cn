@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/19/2020
-  ms.openlocfilehash: 4d2cd89f0375031c25820509290f4fe9336d0ca4
-  ms.sourcegitcommit: 058c7d4366cd015b8c5fbcba012f9e74be9f81cc
+  ms.date: 06/23/2020
+  ms.openlocfilehash: 07c1f66901ca5cfeb1fba10f4ae256a727fe9aed
+  ms.sourcegitcommit: 7e1ffd9825fce79d1d3972c0dfd0adc25f4adc0a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/19/2020
-  ms.locfileid: "85111286"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289510"
 highlightedContent:
   items:
   - title: Azure 混合虚拟活动 - 2020 年 6 月 24 日
@@ -281,10 +281,10 @@ additionalContent:
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: Azure 全球和 Azure Stack
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure 混合博客
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure 混合功能
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: 混合云客户案例
       - url: /learn
         text: Microsoft Learn 交互式培训
       - url: /learn/tv/
@@ -295,6 +295,8 @@ additionalContent:
         text: 适用于 Azure 的 .NET 开发
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc 快速入门
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: 已通过针对 Azure IoT Edge 设备的认证
       - url: /samples/browse/
         text: 代码示例浏览器
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
@@ -307,7 +309,7 @@ additionalContent:
         text: Visual Studio Azure 开发
     - title: 支持和其他资源
       links:
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: 已通过针对 Azure IoT Edge 设备的认证
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure 混合博客
       - url: /answers/products/
         text: Microsoft 问答论坛
