@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
-  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
+  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
+  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/24/2020
-  ms.locfileid: "87121801"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87473780"
 highlightedContent:
   items:
   - title: 发现新的 Azure Stack HCI
@@ -56,7 +56,7 @@ productDirectory:
     - url: /azure-stack/hci
       text: Azure Stack HCI
   - title: 适用于设备的智能边缘平台。
-    imageSrc: media/index/azure-stack-hub.svg
+    imageSrc: media/index/intelligent.svg
     links:
     - url: /azure/iot-edge/
       text: Azure IoT Edge
@@ -178,7 +178,7 @@ conceptualContent:
       text: Azure Sentinel
     - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
       itemType: overview
-      text: 已加入混合 Azure AD 的设备
+      text: 混合 Azure AD 加入设备
   - title: 管理
     links:
     - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -251,6 +251,20 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
+  - title: 工具
+    links:
+    - url: /dotnet/azure/
+      itemType: overview
+      text: 适用于 Azure 的 .NET 开发
+    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+      itemType: overview
+      text: 视觉 AI 开发人员工具包
+    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+      itemType: overview
+      text: 适用于 Visual Studio Code 的 Azure IoT Tools
+    - url: /visualstudio/azure/
+      itemType: overview
+      text: Visual Studio Azure 开发
 additionalContent:
   sections:
   - title: 混合解决方案
@@ -280,44 +294,46 @@ additionalContent:
       - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
         text: 客流量检测（零售）
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
-        text: 地理分散式应用
+        text: 地区分布式应用
   - title: 其他资源
     items:
-    - title: 常规资源
+    - title: 常规
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Azure 全球与 Azure Stack
+        text: Azure 全球云与 Azure Stack
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure 混合博客
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure 混合功能
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: Azure Stack Hub 客户解决方案
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: 混合云客户案例
-      - url: /learn
-        text: Microsoft Learn 互动式培训
-      - url: /learn/tv/
-        text: Microsoft Learn TV
-    - title: 用于生成和操作的资源
+      - url: /answers/products/
+        text: Microsoft 问答论坛
+    - title: 评估和学习
       links:
-      - url: /dotnet/azure/
-        text: 适用于 Azure 的 .NET 开发
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc 快速入门
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge AI 视频智能解决方案加速器
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge 动手实验
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT 解决方案加速器
+      - url: /azure-stack/asdk
+        text: Azure Stack 开发工具包
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI 评估指南
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Azure Stack 混合应用简介
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: 已通过针对 Azure IoT Edge 设备的认证
       - url: /samples/browse/
         text: 代码示例浏览器
+      - url: https://docs.docker.com/
+        text: Docker 文档
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: 从 Azure Stack Hub 动态缩放到 Azure
-      - url: https://labs.iotedge.dev/
-        text: IoT Edge 动手实验
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: 视觉 AI 开发人员工具包
-      - url: /visualstudio/azure/
-        text: Visual Studio Azure 开发
-    - title: 支持和其他资源
-      links:
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure 混合博客
-      - url: /answers/products/
-        text: Microsoft 问答论坛
+      - url: /learn
+        text: Microsoft Learn
