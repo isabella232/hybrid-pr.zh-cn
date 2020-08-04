@@ -7,18 +7,18 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909973"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477246"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>为 Azure 和 Azure Stack Hub 应用配置混合云标识
 
 了解如何为 Azure 和 Azure Stack Hub 应用配置混合云标识。
 
-你有两个选项可用于在全球 Azure 和 Azure Stack 中心授予对应用的访问权限。
+在全局 Azure 和 Azure Stack Hub 中，有两个选项可用于授予对应用的访问权限。
 
  * 当 Azure Stack Hub 与 Internet 建立了不间断的连接时，可以使用 Azure Active Directory (Azure AD)。
  * 当 Azure Stack Hub 从 Internet 断开了连接时，可以使用 Azure Directory 联合身份验证服务 (AD FS)。
@@ -28,14 +28,14 @@ ms.locfileid: "84909973"
 在此解决方案中，你将构建一个示例环境来完成以下任务：
 
 > [!div class="checklist"]
-> - 在全球 Azure 和 Azure Stack 集线器中建立混合标识
+> - 在全局 Azure 和 Azure Stack Hub 中建立混合标识
 > - 检索用于访问 Azure Stack Hub API 的令牌。
 
 必须拥有 Azure Stack Hub 操作员权限才能完成此解决方案中的步骤。
 
 > [!Tip]  
 > ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
-> Microsoft Azure Stack 中心是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
+> Microsoft Azure Stack Hub 是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
 > 
 > [混合应用设计注意事项](overview-app-design-considerations.md)一文回顾了设计、部署和运行混合应用所需的软件质量要素（位置、可伸缩性、可用性、复原能力、可管理性和安全性）。 这些设计注意事项有助于优化混合应用设计，从而最大限度地减少生产环境中的难题。
 
@@ -51,22 +51,22 @@ ms.locfileid: "84909973"
 
 [Azure Stack Hub API](/azure-stack/user/azure-stack-rest-api-use.md) 解决方案将引导你完成检索令牌以访问 Azure Stack Hub API 的过程。
 
-## <a name="connect-to-azure-stack-hub-using-powershell"></a>使用 PowerShell 连接到 Azure Stack 集线器
+## <a name="connect-to-azure-stack-hub-using-powershell"></a>使用 PowerShell 连接到 Azure Stack Hub
 
 [在 Azure Stack Hub 中使用 PowerShell 启动并运行](/azure-stack/operator/azure-stack-powershell-install.md)快速入门演练了安装 Azure PowerShell 并连接到 Azure Stack Hub 安装所要执行的步骤。
 
 ### <a name="prerequisites"></a>必备条件
 
-你需要与你可以访问的订阅连接到 Azure AD Azure Stack 中心安装。 如果没有 Azure Stack 集线器安装，则可以使用这些说明来设置[Azure Stack 开发工具包（ASDK）](/azure-stack/asdk/asdk-install.md)。
+你需要已连接到 Azure AD 的 Azure Stack Hub 安装，以及可访问的订阅。 如果没有 Azure Stack Hub 安装，则可以按照以下说明设置 [Azure Stack 开发工具包 (ASDK)](/azure-stack/asdk/asdk-install.md)。
 
 #### <a name="connect-to-azure-stack-hub-using-code"></a>使用代码连接到 Azure Stack Hub
 
-若要使用代码连接到 Azure Stack 中心，请使用 Azure 资源管理器终结点 API 获取 Azure Stack 集线器安装的身份验证和图形终结点。 然后使用 REST 请求进行身份验证。 可在 [GitHub](https://github.com/shriramnat/HybridARMApplication) 中找到示例客户端应用程序。
+若要使用代码连接到 Azure Stack Hub，请使用 Azure 资源管理器终结点 API 获取 Azure Stack Hub 安装的身份验证和图终结点。 然后使用 REST 请求进行身份验证。 可以在 [GitHub](https://github.com/shriramnat/HybridARMApplication) 上找到示例客户端应用程序。
 
 >[!Note]
->除非所选语言的 Azure SDK 支持 Azure API 配置文件，否则 SDK 可能无法与 Azure Stack Hub 一起使用。 有关 Azure API 配置文件的详细信息，请参阅[管理 API 版本配置文件](/azure-stack/user/azure-stack-version-profiles.md)一文。
+>除非所选语言的 Azure SDK 支持 Azure API 配置文件，否则该 SDK 可能无法与 Azure Stack Hub 配合使用。 若要了解有关 Azure API 配置文件的详细信息，请参阅[管理 API 版本配置文件](/azure-stack/user/azure-stack-version-profiles.md)一文。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 若要详细了解 Azure Stack Hub 如何处理标识，请参阅 [Azure Stack Hub 的标识体系结构](/azure-stack/operator/azure-stack-identity-architecture.md)。
-- 若要详细了解 Azure 云模式，请参阅[云设计模式](https://docs.microsoft.com/azure/architecture/patterns)。
+- 若要了解有关如何在 Azure Stack Hub 中处理标识的详细信息，请参阅 [Azure Stack Hub 的标识体系结构](/azure-stack/operator/azure-stack-identity-architecture.md)。
+- 若要详细了解 Azure 云模式，请参阅[云设计模式](/azure/architecture/patterns)。

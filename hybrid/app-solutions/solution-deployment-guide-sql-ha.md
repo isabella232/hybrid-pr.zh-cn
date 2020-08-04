@@ -7,16 +7,16 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ff6d5b9667e63a6b8d232b6dd93db2d8b12fd46d
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909934"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477076"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>将 SQL Server 2016 可用性组部署到 Azure 和 Azure Stack Hub
 
-本文逐步指导你跨两个 Azure Stack Hub 环境，通过异步的灾难恢复 (DR) 站点自动部署基本的高度可用 (HA) SQL Server 2016 Enterprise 群集。 有关 SQL Server 2016 和高可用性的详细信息，请参阅 [Always On 可用性组：高可用性和灾难恢复解决方案](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)。
+本文逐步指导你跨两个 Azure Stack Hub 环境，通过异步的灾难恢复 (DR) 站点自动部署基本的高度可用 (HA) SQL Server 2016 Enterprise 群集。 有关 SQL Server 2016 和高可用性的详细信息，请参阅 [Always On 可用性组：高可用性和灾难恢复解决方案](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)。
 
 在此解决方案中，你将构建一个示例环境来完成以下任务：
 
@@ -27,7 +27,7 @@ ms.locfileid: "84909934"
 
 > [!Tip]  
 > ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
-> Microsoft Azure Stack 中心是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
+> Microsoft Azure Stack Hub 是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
 > 
 > [混合应用设计注意事项](overview-app-design-considerations.md)一文回顾了设计、部署和运行混合应用所需的软件质量要素（位置、可伸缩性、可用性、复原能力、可管理性和安全性）。 这些设计注意事项有助于优化混合应用设计，从而最大限度地减少生产环境中的难题。
 
@@ -40,9 +40,9 @@ ms.locfileid: "84909934"
 - 两个连接的 Azure Stack Hub 集成系统 (Azure Stack Hub)。 此部署不适用于 Azure Stack 开发工具包 (ASDK)。 若要详细了解 Azure Stack Hub，请参阅 [Azure Stack 概述](https://azure.microsoft.com/overview/azure-stack/)。
 - 每个 Azure Stack Hub 上有一个租户订阅。
   - **记下每个订阅 ID 以及每个 Azure Stack Hub 的 Azure 资源管理器终结点。**
-- 一个 Azure Active Directory (Azure AD) 服务主体，该主体有权访问每个 Azure Stack Hub 上的租户订阅。 如果 Azure Stack Hub 是针对不同 Azure AD 租户部署的，则可能需要创建两个服务主体。 若要了解如何为 Azure Stack Hub 创建服务主体，请参阅[创建为应用提供 Azure Stack Hub 资源访问权限的服务主体](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals)。
-  - **记下每个服务主体的应用程序 ID、客户端机密和租户名称（xxxxx.onmicrosoft.com）。**
-- SQL Server 2016 Enterprise 已联合到 Azure Stack Hub 的每个市场。 若要详细了解市场联合，请参阅[将市场项下载到 Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item)。
+- 一个 Azure Active Directory (Azure AD) 服务主体，该主体有权访问每个 Azure Stack Hub 上的租户订阅。 如果 Azure Stack Hub 是针对不同 Azure AD 租户部署的，则可能需要创建两个服务主体。 若要了解如何为 Azure Stack Hub 创建服务主体，请参阅[创建为应用提供 Azure Stack Hub 资源访问权限的服务主体](/azure-stack/user/azure-stack-create-service-principals)。
+  - **记下每个服务主体的应用程序 ID、客户端密码和租户名称 (xxxxx.onmicrosoft.com)。**
+- SQL Server 2016 Enterprise 已联合到 Azure Stack Hub 的每个市场。 若要详细了解市场联合，请参阅[将市场项下载到 Azure Stack Hub](/azure-stack/operator/azure-stack-download-azure-marketplace-item)。
     **请确保你的组织具有适当的 SQL 许可证。**
 - 在本地计算机上安装[用于 Windows 的 Docker](https://docs.docker.com/docker-for-windows/)。
 
@@ -105,6 +105,6 @@ ms.locfileid: "84909934"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 使用 SQL Server Management Studio 手动故障转移群集。 请参阅[执行 Always On 可用性组的强制手动故障转移 (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
+- 使用 SQL Server Management Studio 手动故障转移群集。 请参阅[执行 Always On 可用性组的强制手动故障转移 (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
 - 详细了解混合云应用。 请参阅[混合云解决方案。](https://aka.ms/azsdevtutorials)
 - 使用自己的数据，或修改 [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) 上此示例的代码。

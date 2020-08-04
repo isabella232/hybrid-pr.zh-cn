@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909944"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477212"
 ---
 # <a name="hybrid-app-design-considerations"></a>混合应用设计注意事项
 
 Microsoft Azure 是唯一一致的混合云。 它让你能够重复利用开发投资，并支持跨全球 Azure、Azure 主权云和 Azure Stack（数据中心内的一个 Azure 扩展）的应用。 跨云的应用也称为“混合应用”。
 
-[Azure 应用程序体系结构指南](https://docs.microsoft.com/azure/architecture/guide)中介绍了设计可缩放、可复原且高度可用的应用的结构化方法。 [Azure 应用程序体系结构指南](https://docs.microsoft.com/azure/architecture/guide)中所述的注意事项同样适用于针对单个云设计的应用和跨云的应用。
+[Azure 应用程序体系结构指南](/azure/architecture/guide)中介绍了设计可缩放、可复原且高度可用的应用的结构化方法。 [Azure 应用程序体系结构指南](/azure/architecture/guide)中所述的注意事项同样适用于针对单个云设计的应用和跨云的应用。
 
-本文对 [Azure 应用程序](https://docs.microsoft.com/azure/architecture/guide/)[体系结构指南](https://docs.microsoft.com/azure/architecture/guide/)中所述的[软件质量的要素](https://docs.microsoft.com/azure/architecture/guide/pillars)进行补充，重点说明如何设计混合应用  。 此外，我们还添加了一个放置要素，因为混合应用并非专属于一个云或一个本地数据中心。
+本文对 [Azure 应用程序](/azure/architecture/guide/)[体系结构指南](/azure/architecture/guide/)中所述的[软件质量的要素](/azure/architecture/guide/pillars)进行补充，重点说明如何设计混合应用  。 此外，我们还添加了一个放置要素，因为混合应用并非专属于一个云或一个本地数据中心。
 
 混合方案因可用于开发的资源而有很大的不同，并且涉及地理、安全性、Internet 访问等注意事项。 尽管本指南无法列举具体的注意事项，但可以提供一些重要的指南和最佳做法供你遵循。 成功设计、配置、部署和维护混合应用体系结构涉及许多可能不为你所熟知的设计注意事项。
 
@@ -93,7 +93,7 @@ Microsoft Azure 是唯一一致的混合云。 它让你能够重复利用开发
 
 **验证所需的位置。** 确保要求应用或其任何组件在特定的云中运行，或者要求经过认证才能在特定云中运行。 这可能包括公司或法律规定的主权要求。 此外，确定特定的位置或区域设置是否需要任何本地操作。
 
-**确定连接依赖关系。** 所需的位置和其他因素可以指示组件之间的连接依赖关系。 定位组件时，请确定它们之间的通信的最佳连接和安全性。 选项包括 [*VPN*](https://docs.microsoft.com/azure/vpn-gateway/)、[*ExpressRoute*](https://docs.microsoft.com/azure/expressroute/) 和[混合连接](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)。
+**确定连接依赖关系。** 所需的位置和其他因素可以指示组件之间的连接依赖关系。 定位组件时，请确定它们之间的通信的最佳连接和安全性。 选项包括 [*VPN*](/azure/vpn-gateway/)、[*ExpressRoute*](/azure/expressroute/) 和[混合连接](/azure/app-service/app-service-hybrid-connections)。
 
 **评估平台功能。** 对于每个应用组件，请确定云中是否提供了应用组件所需的资源提供程序，以及带宽是否足以应对预期的吞吐量和延迟要求。
 
@@ -109,7 +109,7 @@ Microsoft Azure 是唯一一致的混合云。 它让你能够重复利用开发
 
 可伸缩性是指系统对于应用负载增加的处理能力，此能力可能随着其他因素和作用力而改变，除了影响应用的大小和范围外，还会影响受众规模。
 
-有关此要素的核心介绍，请参阅卓越体系结构五个要素中的[可伸缩性](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability)。
+有关此要素的核心介绍，请参阅卓越体系结构五个要素中的[可伸缩性](/azure/architecture/guide/pillars#scalability)。
 
 通过混合应用的水平缩放方法可以添加更多实例来满足需求，并可在使用频率较低时禁用这些实例。
 
@@ -155,7 +155,7 @@ Microsoft Azure 是唯一一致的混合云。 它让你能够重复利用开发
 
 复原能力是指混合应用和系统在发生故障后进行恢复，然后继续正常运行的能力。 复原能力的目标是在故障发生后将应用恢复到可完全正常运行的状态。 恢复策略包括备份、复制和灾难恢复等解决方案。
 
-有关此要素的核心介绍，请参阅卓越体系结构五个要素中的[复原能力](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency)。
+有关此要素的核心介绍，请参阅卓越体系结构五个要素中的[复原能力](/azure/architecture/guide/pillars#resiliency)。
 
 ### <a name="resiliency-checklist"></a>复原能力查检表
 
@@ -201,7 +201,7 @@ Microsoft Azure 是唯一一致的混合云。 它让你能够重复利用开发
 
 安全性是所有云应用的主要注意事项之一，其对混合云应用而言更为关键。
 
-有关此要素的核心介绍，请参阅卓越体系结构五个要素中的[安全性](https://docs.microsoft.com/azure/architecture/guide/pillars#security)。
+有关此要素的核心介绍，请参阅卓越体系结构五个要素中的[安全性](/azure/architecture/guide/pillars#security)。
 
 ### <a name="security-checklist"></a>安全清单
 

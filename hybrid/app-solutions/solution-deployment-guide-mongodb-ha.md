@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: b34ba7c10ff5f658d645923ae8b6de2fb2607ccb
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909992"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477263"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>将高度可用的 MongoDB 解决方案部署到 Azure 和 Azure Stack Hub
 
@@ -27,7 +27,7 @@ ms.locfileid: "84909992"
 
 > [!Tip]  
 > ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
-> Microsoft Azure Stack 中心是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
+> Microsoft Azure Stack Hub 是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
 > 
 > [混合应用设计注意事项](overview-app-design-considerations.md)一文回顾了设计、部署和运行混合应用所需的软件质量要素（位置、可伸缩性、可用性、复原能力、可管理性和安全性）。 这些设计注意事项有助于优化混合应用设计，从而最大限度地减少生产环境中的难题。
 
@@ -37,12 +37,12 @@ ms.locfileid: "84909992"
 
 ## <a name="prerequisites-for-mongodb-with-azure-stack-hub"></a>将 MongoDB 与 Azure Stack Hub 配合使用的先决条件
 
-- 两个连接的 Azure Stack Hub 集成系统 (Azure Stack Hub)。 此部署不适用于 Azure Stack 开发工具包 (ASDK)。 若要详细了解 Azure Stack 中心，请参阅[什么是 Azure Stack 中心？](https://azure.microsoft.com/products/azure-stack/hub/)
+- 两个连接的 Azure Stack Hub 集成系统 (Azure Stack Hub)。 此部署不适用于 Azure Stack 开发工具包 (ASDK)。 若要了解有关 Azure Stack Hub 的详细信息，请参阅[什么是 Azure Stack Hub？](https://azure.microsoft.com/products/azure-stack/hub/)
   - 每个 Azure Stack Hub 上有一个租户订阅。 
   - **记下每个订阅 ID 以及每个 Azure Stack Hub 的 Azure 资源管理器终结点。**
-- 一个 Azure Active Directory (Azure AD) 服务主体，该主体有权访问每个 Azure Stack Hub 上的租户订阅。 如果 Azure Stack Hub 是针对不同 Azure AD 租户部署的，则可能需要创建两个服务主体。 若要了解如何为 Azure Stack Hub 创建服务主体，请参阅[使用应用标识访问 Azure Stack Hub 资源](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals)。
-  - **记下每个服务主体的应用程序 ID、客户端机密和租户名称（xxxxx.onmicrosoft.com）。**
-- 与每个 Azure Stack Hub 市场联合的 Ubuntu 16.04。 若要详细了解市场联合，请参阅[将市场项下载到 Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item)。
+- 一个 Azure Active Directory (Azure AD) 服务主体，该主体有权访问每个 Azure Stack Hub 上的租户订阅。 如果 Azure Stack Hub 是针对不同 Azure AD 租户部署的，则可能需要创建两个服务主体。 若要了解如何为 Azure Stack Hub 创建服务主体，请参阅[使用应用标识访问 Azure Stack Hub 资源](/azure-stack/user/azure-stack-create-service-principals)。
+  - **记下每个服务主体的应用程序 ID、客户端密码和租户名称 (xxxxx.onmicrosoft.com)。**
+- 与每个 Azure Stack Hub 市场联合的 Ubuntu 16.04。 若要详细了解市场联合，请参阅[将市场项下载到 Azure Stack Hub](/azure-stack/operator/azure-stack-download-azure-marketplace-item)。
 - 在本地计算机上安装[用于 Windows 的 Docker](https://docs.docker.com/docker-for-windows/)。
 
 ## <a name="get-the-docker-image"></a>获取 Docker 映像

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 306cc9604a8e919724f9f76b7e5122d534d2d1ae
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: e26056a9507a7467473b009725d4f210d9d59ec8
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909945"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477229"
 ---
 # <a name="devops-pattern"></a>DevOps 模式
 
@@ -47,7 +47,7 @@ DevOps 模式旨在确保无论目标环境为何，都能实现跨部署的一�
 - 部署参数是否可在所有目标环境中正常运行？
 - 是否在所有目标云中都可以使用资源特定的属性？
 
-有关详细信息，请参阅[开发用于实现云一致性的 Azure 资源管理器模板](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency)。
+有关详细信息，请参阅[开发用于实现云一致性的 Azure 资源管理器模板](/azure/azure-resource-manager/templates-cloud-consistency)。
 
 此外，在决定如何实现此模式时，请考虑以下几点：
 
@@ -63,7 +63,7 @@ DevPattern 上下文中的可用性是指能够恢复与工作流关联的任何
 
 - 恢复点目标 (RPO) 表示服务中断影响到系统时，允许丢失多少数据。
 
-在实践中，RTO 和 RPO 涉及到冗余和备份。 在全球 Azure 云上，可用性不是硬件恢复问题-这是 Azure 的一部分，而是确保保持 DevOps 系统的状态。 在 Azure Stack Hub 上，硬件恢复可能是一个考虑因素。
+在实践中，RTO 和 RPO 涉及到冗余和备份。 在全局 Azure 云上，可用性不是硬件恢复的问题（这是 Azure 的部分责任），而是为了确保维持 DevOps 系统的状态。 在 Azure Stack Hub 上，硬件恢复可能是一个考虑因素。
 
 设计用于部署自动化的系统时，另一个主要考虑因素是将服务部署到云环境所需的访问控制和适当的权限管理。 创建、删除或修改部署时需要哪些权限？ 例如，在 Azure 中创建资源组时通常需要一组权限，而在资源组中部署服务时则需要另一组权限。
 
