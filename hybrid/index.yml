@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Azure 混合云文档
+title: Azure 混合文档
 summary: 用于构建和运营跨全球云、数据中心和边缘的混合解决方案的资源。
 brand: azure
 metadata:
@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/30/2020
-  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
-  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
+  ms.date: 08/05/2020
+  ms.openlocfilehash: 09eca5be0d1b638b1ca5122c12f362ddde8559e8
+  ms.sourcegitcommit: e1bdde91a92840fe1da420148329fee36addc03e
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/31/2020
-  ms.locfileid: "87473780"
+  ms.lasthandoff: 08/06/2020
+  ms.locfileid: "87838509"
 highlightedContent:
   items:
   - title: 发现新的 Azure Stack HCI
@@ -195,7 +195,7 @@ conceptualContent:
       text: Azure 自动化
     - url: /azure/storage/files/
       itemType: overview
-      text: Azure 文件存储
+      text: Azure 文件
     - url: /azure-monitor
       itemType: overview
       text: Azure Monitor
