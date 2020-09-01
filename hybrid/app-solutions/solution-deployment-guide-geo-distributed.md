@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477348"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886826"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 通过地理分散式应用定向流量
 
@@ -84,7 +84,7 @@ ms.locfileid: "86477348"
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>获取自定义域并配置 DNS
 
-更新域的 DNS 区域文件。 然后，Azure AD 可以验证自定义域名的所有权。 将 [Azure DNS](/azure/dns/dns-getstarted-portal) 用于 Azure 中的 Azure/Office 365/外部 DNS 记录，或在[其他 DNS 注册机构](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)中添加 DNS 条目。
+更新域的 DNS 区域文件。 然后，Azure AD 可以验证自定义域名的所有权。 可将 [Azure DNS](/azure/dns/dns-getstarted-portal) 用于 Azure 中的 Azure/Microsoft 365/外部 DNS 记录，或在[其他 DNS 注册机构](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中添加 DNS 条目。
 
 1. 向公共注册机构注册自定义域。
 
@@ -256,7 +256,7 @@ Azure DevOps Services 提供高度可配置、可管理的管道，用于将内�
 
 - 购买一个域名并确保你对你的域提供商的 DNS 注册表拥有访问权限。
 
-更新域的 DNS 区域文件。 然后，Azure AD 将会验证自定义域名的所有权。 将 [Azure DNS](/azure/dns/dns-getstarted-portal) 用于 Azure 中的 Azure/Office 365/外部 DNS 记录，或在[其他 DNS 注册机构](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)中添加 DNS 条目。
+更新域的 DNS 区域文件。 然后，Azure AD 将会验证自定义域名的所有权。 可将 [Azure DNS](/azure/dns/dns-getstarted-portal) 用于 Azure 中的 Azure/Microsoft 365/外部 DNS 记录，或在[其他 DNS 注册机构](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中添加 DNS 条目。
 
 - 向公共注册机构注册自定义域。
 
