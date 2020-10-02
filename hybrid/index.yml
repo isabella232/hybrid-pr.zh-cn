@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: 8109b1b42c133afa3179b362c543118965486ac7
-  ms.sourcegitcommit: 64698a0824c87d0838b57cff05187f4225bb619c
+  ms.openlocfilehash: fe346e09aba6e073f291037eb767a3936dea3a99
+  ms.sourcegitcommit: 1c9d681b45f3cc91fd6896badf998be68e284a35
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91209699"
+  ms.lasthandoff: 09/28/2020
+  ms.locfileid: "91407712"
 highlightedContent:
   items:
   - title: Ignite 2020：混合会议
@@ -263,20 +263,6 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
-  - title: 工具
-    links:
-    - url: /dotnet/azure/
-      itemType: overview
-      text: 适用于 Azure 的 .NET 开发
-    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-      itemType: overview
-      text: 视觉 AI 开发人员工具包
-    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-      itemType: overview
-      text: 适用于 Visual Studio Code 的 Azure IoT Tools
-    - url: /visualstudio/azure/
-      itemType: overview
-      text: Visual Studio Azure 开发
 additionalContent:
   sections:
   - title: 混合解决方案
@@ -308,47 +294,113 @@ additionalContent:
         text: 客流量检测（零售）
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: 地区分布式应用
-  - title: 其他资源
+  - title: 评估和学习资源
     items:
-    - title: 常规
+    - title: Azure Stack
       links:
-      - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Azure 全球云与 Azure Stack
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure 混合博客
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Azure 混合功能
-      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-        text: Azure 混合虚拟活动
-      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-        text: Azure Stack Hub 客户解决方案
-      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-        text: 混合云客户案例
-      - url: /answers/products/
-        text: Microsoft 问答论坛
-    - title: 评估和学习
-      links:
-      - url: https://github.com/likamrat/azure_arc
-        text: Azure Arc 快速入门
-      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
-        text: Azure IoT Edge AI 视频智能解决方案加速器
-      - url: https://labs.iotedge.dev/
-        text: Azure IoT Edge 动手实验
-      - url: https://www.azureiotsolutions.com/Accelerators
-        text: Azure IoT 解决方案加速器
       - url: /azure-stack/asdk
         text: Azure Stack 开发工具包
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI 评估指南
       - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
         text: Azure Stack 混合应用简介
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: 已通过针对 Azure IoT Edge 设备的认证
-      - url: /samples/browse/
-        text: 代码示例浏览器
-      - url: https://docs.docker.com/
-        text: Docker 文档
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: 从 Azure Stack Hub 动态缩放到 Azure
+    - title: Microsoft Edge
+      links:
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge AI 视频智能解决方案加速器
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge 动手实验
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT 解决方案加速器
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: 已通过针对 Azure IoT Edge 设备的认证
+    - title: 常规
+      links:
+      - url: /learn/modules/align-requirements-in-azure/
+        text: 使需求与 Azure 中的云类型和服务模型保持一致
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure 混合功能
+      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+        text: Azure 混合虚拟活动
+      - url: /learn/modules/intro-to-azure-hybrid-services/
+        text: Azure 混合云简介
       - url: /learn
         text: Microsoft Learn
+    - title: 标识和安全
+      links:
+      - url: /learn/modules/azure-sentinel-deploy-configure/
+        text: 部署 Azure Sentinel 并连接数据源
+      - url: /learn/modules/implement-hybrid-identity-windows-server/
+        text: 通过 Windows Server 实现混合标识
+      - url: /learn/modules/intro-to-azure-sentinel/
+        text: Azure Sentinel 简介
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server 混合云管理、监视和安全性
+    - title: 管理
+      links:
+      - url: https://github.com/likamrat/azure_arc
+        text: Azure Arc 快速入门
+      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+        text: 高可用性和灾难恢复策略
+      - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
+        text: 支持高可用性和灾难恢复和 IaaS 和 PaaS 平台工具
+      - url: /learn/modules/intro-to-azure-arc/
+        text: Azure Arc 简介
+      - url: /learn/modules/manage-hybrid-workloads-azure-arc/
+        text: 利用 Azure Arc 管理混合工作负载
+      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+        text: 监视 Windows Server IaaS 虚拟机和混合实例
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server 混合云管理、监视和安全性
+    - title: 网络
+      links:
+      - url: /learn/modules/design-a-hybrid-network-architecture/
+        text: 在 Azure 上设计混合网络体系结构
+      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+        text: 通过 Azure 中继安全地公开混合服务
+      - url: /learn/modules/implement-hybrid-network-infrastructure/
+        text: 实现混合网络基础结构
+    - title: 存储
+      links:
+      - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+        text: 实现混合文件服务器基础结构
+      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+        text: 使用 Windows Server IaaS 实现混合备份和恢复
+  - title: 其他资源
+    items:
+    - title: 开发人员
+      links:
+      - url: /azure/developer/
+        text: Azure 开发人员文档和工具
+      - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+        text: Azure 混合体系结构
+      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+        text: 适用于 Visual Studio Code 的 Azure IoT Tools
+      - url: /samples/browse/
+        text: 代码示例浏览器
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: 视觉 AI 开发人员工具包
+      - url: /visualstudio/azure/
+        text: Visual Studio Azure 开发
+    - title: 常规
+      links:
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure 混合博客
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure 混合功能
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: Azure Stack Hub 客户解决方案
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: 混合云客户案例
+    - title: 帮助 + 支持
+      links:
+      - url: https://azure.microsoft.com/support/options/
+        text: Azure 支持
+      - url: https://feedback.azure.com/
+        text: Azure UserVoice 反馈
+      - url: /answers/products/
+        text: Microsoft 问答论坛
+      - url: https://stackoverflow.com/
+        text: Stack Overflow
