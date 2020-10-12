@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477263"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852501"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>将高度可用的 MongoDB 解决方案部署到 Azure 和 Azure Stack Hub
 
@@ -105,5 +105,5 @@ ms.locfileid: "86477263"
 ## <a name="next-steps"></a>后续步骤
 
 - 如果在 DR Azure Stack Hub 上启用了跳转盒，则可通过 SSH 进行连接，并通过安装 mongo CLI 与 MongoDB 群集进行交互。 若要详细了解如何与 MongoDB 交互，请参阅 [The mongo Shell](https://docs.mongodb.com/manual/mongo/)（mongo Shell）。
-- 若要详细了解混合云应用，请参阅[混合云解决方案](https://aka.ms/azsdevtutorials)。
+- 若要详细了解混合云应用，请参阅[混合云解决方案](/azure-stack/user/)。
 - 在 [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) 上修改此示例的代码。

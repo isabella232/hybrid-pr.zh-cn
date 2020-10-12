@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477076"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852467"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>将 SQL Server 2016 可用性组部署到 Azure 和 Azure Stack Hub
 
@@ -106,5 +106,5 @@ ms.locfileid: "86477076"
 ## <a name="next-steps"></a>后续步骤
 
 - 使用 SQL Server Management Studio 手动故障转移群集。 请参阅[执行 Always On 可用性组的强制手动故障转移 (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
-- 详细了解混合云应用。 请参阅[混合云解决方案。](https://aka.ms/azsdevtutorials)
+- 详细了解混合云应用。 请参阅[混合云解决方案。](/azure-stack/user/)
 - 使用自己的数据，或修改 [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) 上此示例的代码。
