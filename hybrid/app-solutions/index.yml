@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Azure 混合模式和解决方案文档
-summary: 了解如何在应用程序开发中利用混合模式和解决方案示例。 Azure 和 Azure Stack 支持开发混合应用程序，这种应用程序基于一套智能云和智能边缘服务而构建。
+title: Azure 混合与多云模式和解决方案文档
+summary: 了解如何在应用开发中使用混合与多云模式和解决方案示例，这些示例是在一套智能云和智能边缘服务的基础上构建的。
 metadata:
-  title: Azure 混合模式和解决方案文档
-  description: 了解如何在应用程序开发中利用混合模式和解决方案示例。 Azure 和 Azure Stack 支持开发混合应用程序，这种应用程序基于一套智能云和智能边缘服务而构建。
+  title: Azure 混合与多云模式和解决方案文档
+  description: 了解如何在应用开发中使用混合与多云模式和解决方案示例，这些示例是在一套智能云和智能边缘服务的基础上构建的。
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909630"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872967"
 landingContent:
-- title: 关于混合模式和解决方案
+- title: 关于混合与多云模式和解决方案
   linkLists:
   - linkListType: overview
     links:
-    - text: 什么是混合模式和解决方案示例？
+    - text: 什么是模式和解决方案示例？
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: 混合应用设计注意事项
+    - text: 应用设计考虑因素
       url: overview-app-design-considerations.md
-- title: 探索混合模式
+- title: 了解混合和多云模式
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: 地区分布式应用
       url: pattern-geo-distributed.md
-- title: 部署混合解决方案示例
+- title: 部署混合和多云解决方案示例
   linkLists:
   - linkListType: tutorial
     links:

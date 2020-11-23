@@ -1,8 +1,8 @@
-- name: Azure 混合文档
+- name: 混合和多云解决方案文档
   href: index.yml
 - name: 概述
   items:
-    - name: 混合模式和解决方案示例
+    - name: 模式和解决方案示例
       href: overview-patterns-solution-examples.md
 - name: 模式
   items:
@@ -58,7 +58,7 @@
       href: 'https://aka.ms/edgetrainingdeploy'
 - name: 概念
   items:
-    - name: 混合应用设计注意事项
+    - name: 应用设计考虑因素
       href: overview-app-design-considerations.md
 - name: 相关内容
   items:
