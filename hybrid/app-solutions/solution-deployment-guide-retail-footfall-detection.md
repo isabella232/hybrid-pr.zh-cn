@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+ms.openlocfilehash: caedbd4758b9ae8c93cf9bb625ed9aac68bfa196
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96901484"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895353"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 部署基于 AI 的客流量检测解决方案
 
@@ -37,22 +37,22 @@ ms.locfileid: "96901484"
 
 - 查看[客流量检测模式](pattern-retail-footfall-detection.md)主题。
 - 在具备以下条件的情况下，获取对 Azure Stack 开发工具包 (ASDK) 或 Azure Stack Hub 集成系统实例的用户访问权限：
-  - 已安装 [Azure Stack Hub 资源提供程序上的 Azure 应用服务](/azure-stack/operator/azure-stack-app-service-overview.md)。 需要具有对 Azure Stack Hub 实例的操作员访问权限，或与管理员合作进行安装。
+  - 已安装 [Azure Stack Hub 资源提供程序上的 Azure 应用服务](/azure-stack/operator/azure-stack-app-service-overview)。 需要具有对 Azure Stack Hub 实例的操作员访问权限，或与管理员合作进行安装。
   - 订阅可提供应用服务和存储配额的套餐。 需要具有操作员访问权限才能创建套餐。
 - 获取对 Azure 订阅的访问权限。
   - 如果还没有 Azure 订阅，可以在开始前注册一个[免费试用帐户](https://azure.microsoft.com/free/)。
 - 在目录中创建两个服务主体：
   - 一个设置用于 Azure 资源，可在 Azure 订阅范围内进行访问。
   - 一个设置用于 Azure Stack Hub 资源，可在 Azure Stack Hub 订阅范围内进行访问。
-  - 若要了解有关创建服务主体和授权访问的详细信息，请参阅[使用应用标识访问资源](/azure-stack/operator/azure-stack-create-service-principals.md)。 如果希望使用 Azure CLI，请参阅[使用 Azure CLI 创建 Azure 服务主体](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)。
+  - 若要了解有关创建服务主体和授权访问的详细信息，请参阅[使用应用标识访问资源](/azure-stack/operator/azure-stack-create-service-principals)。 如果希望使用 Azure CLI，请参阅[使用 Azure CLI 创建 Azure 服务主体](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)。
 - 在 Azure 或 Azure Stack Hub 中部署 Azure 认知服务。
   - 首先，[了解有关认知服务的详细信息](https://azure.microsoft.com/services/cognitive-services/)。
-  - 然后，访问[将 Azure 认知服务部署到 Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) 以在 Azure Stack Hub 上部署认知服务。 首先需要注册才能访问预览。
+  - 然后，访问[将 Azure 认知服务部署到 Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services) 以在 Azure Stack Hub 上部署认知服务。 首先需要注册才能访问预览。
 - 克隆或下载未配置的 Azure 自定义视觉 AI 开发工具包。 有关详细信息，请参阅[视觉 AI 开发工具包](https://azure.github.io/Vision-AI-DevKit-Pages/)。
 - 注册 Power BI 帐户。
 - Azure 认知服务人脸 API 订阅密钥和终结点 URL。 可通过[试用认知服务](https://azure.microsoft.com/try/cognitive-services/?api=face-api)免费试用版获得这两项。 或者，按照[创建认知服务帐户](/azure/cognitive-services/cognitive-services-apis-create-account)中的说明进行操作。
 - 安装以下开发资源：
-  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2.md)
+  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2)
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/)。 可以通过 Porter 使用所提供的 CNAB 捆绑包清单来部署云应用。
   - [Visual Studio Code](https://code.visualstudio.com/)

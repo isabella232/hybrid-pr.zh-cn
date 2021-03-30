@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
-ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
+ms.openlocfilehash: 0989859fd68847932d3e69defee59740a2bffd44
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353472"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895391"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>部署使用本地数据并跨云缩放的混合应用
 
@@ -47,7 +47,7 @@ ms.locfileid: "92353472"
 此教程假设你了解全局 Azure 和 Azure Stack Hub 的基本知识。 若要在开始本教程之前了解详细信息，请查看以下文章：
 
 - [Azure 简介](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub 的重要概念](/azure-stack/operator/azure-stack-overview.md)
+- [Azure Stack Hub 的重要概念](/azure-stack/operator/azure-stack-overview)
 
 本教程还假设你有一个 Azure 订阅。 如果没有订阅，请在开始前[创建一个免费帐户](https://azure.microsoft.com/free/)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "92353472"
 
 在开始此解决方案之前，请确保符合以下要求：
 
-- Azure Stack 开发工具包 (ASDK) 或 Azure Stack Hub 集成系统的订阅。 若要部署 ASDK，请按照[使用安装程序部署 ASDK](/azure-stack/asdk/asdk-install.md) 中的说明进行操作。
+- Azure Stack 开发工具包 (ASDK) 或 Azure Stack Hub 集成系统的订阅。 若要部署 ASDK，请按照[使用安装程序部署 ASDK](/azure-stack/asdk/asdk-install) 中的说明进行操作。
 - Azure Stack Hub 安装中应包含以下组件：
   - Azure 应用服务。 请与 Azure Stack Hub 操作员协作，在环境中部署并配置 Azure 应用服务。 在本教程中，应用服务必须至少有一 (1) 个可用的专用辅助角色。
   - Windows Server 2016 映像。
@@ -82,7 +82,7 @@ ms.locfileid: "92353472"
 
 4. 在“免费 SQL Server 许可证:   Windows Server 上的 SQL Server 2017 Developer”中，选择“创建”。
 
-5. 在“基本信息”>“配置基本设置”中，提供虚拟机 (VM) 的 **名称** 、SQL Server SA 的 **用户名** ，以及 SA 的 **密码** 。  在“订阅”下拉列表中，选择要部署到的订阅。 对于“资源组”，请使用“选择现有项”，并将 VM 放到 Azure Stack Hub Web 应用所在的同一资源组中。
+5. 在“基本信息”>“配置基本设置”中，提供虚拟机 (VM) 的 **名称**、SQL Server SA 的 **用户名**，以及 SA 的 **密码**。  在“订阅”下拉列表中，选择要部署到的订阅。 对于“资源组”，请使用“选择现有项”，并将 VM 放到 Azure Stack Hub Web 应用所在的同一资源组中。
 
     ![在 Azure Stack Hub 用户门户中为 VM 配置基本设置](media/solution-deployment-guide-hybrid/image3.png)
 
@@ -90,16 +90,16 @@ ms.locfileid: "92353472"
 
 7. 在“设置”>“配置可选功能”下面配置以下设置：
 
-   - **存储帐户** ：根据需要创建新帐户。
-   - **虚拟网络** ：
+   - **存储帐户**：根据需要创建新帐户。
+   - **虚拟网络**：
 
      > [!Important]  
      > 请务必将 SQL Server VM 部署到 VPN 网关所在的同一虚拟网络中。
 
-   - **公共 IP 地址** ：使用默认设置。
-   - **网络安全组** ：(NSG)。 创建新 NSG。
-   - **扩展和监视** ：保留默认设置。
-   - **诊断存储帐户** ：根据需要创建新帐户。
+   - **公共 IP 地址**：使用默认设置。
+   - **网络安全组**：(NSG)。 创建新 NSG。
+   - **扩展和监视**：保留默认设置。
+   - **诊断存储帐户**：根据需要创建新帐户。
    - 选择“确定”以保存配置。
 
      ![在 Azure Stack Hub 用户门户中配置可选 VM 功能](media/solution-deployment-guide-hybrid/image4.png)
@@ -107,7 +107,7 @@ ms.locfileid: "92353472"
 8. 在“SQL Server 设置”下面配置以下设置：
 
    - 对于“SQL 连接”，选择“公共(Internet)” 。
-   - 对于“端口”，请保留默认值 **1433** 。
+   - 对于“端口”，请保留默认值 **1433**。
    - 对于“SQL 身份验证”，请选择“启用”。
 
      > [!Note]  
@@ -139,7 +139,7 @@ Azure 应用服务简化了运行和管理 Web 应用的过程。 由于 Azure S
 
 Azure Stack Hub 上的应用服务必须可从公共 Internet 进行路由，使用户能够访问你的应用。 如果 Azure Stack Hub 可从 Internet 访问，请记下 Azure Stack Hub Web 应用的面向公众的 IP 地址或 URL。
 
-如果使用 ASDK，则可以[配置静态 NAT 映射](/azure-stack/operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal)，以便在虚拟环境外部公开应用服务。
+如果使用 ASDK，则可以[配置静态 NAT 映射](/azure-stack/operator/azure-stack-create-vpn-connection-one-node#configure-the-nat-vm-on-each-asdk-for-gateway-traversal)，以便在虚拟环境外部公开应用服务。
 
 ### <a name="connect-a-web-app-in-azure-to-a-hybrid-network"></a>将 Azure 中的 Web 应用连接到混合网络
 
@@ -212,9 +212,9 @@ Azure Stack Hub 上的应用服务必须可从公共 Internet 进行路由，使
 
 由于流量管理器依赖于 DNS CNAME，因此需要使用子域来正确将流量路由到终结点 有关 DNS 记录和域映射的详细信息，请参阅[使用流量管理器映射域](/azure/app-service/web-sites-traffic-manager-custom-domain-name)。
 
-对于 Azure 终结点，需要创建一个可让用户用来访问你的 Web 应用的子域。 在本教程中可以使用 **app.northwind.com** ，但应根据自己的域自定义此值。
+对于 Azure 终结点，需要创建一个可让用户用来访问你的 Web 应用的子域。 在本教程中可以使用 **app.northwind.com**，但应根据自己的域自定义此值。
 
-此外，需要为 Azure Stack Hub 终结点创建包含 A 记录的子域。 可以使用 **azurestack.northwind.com** 。
+此外，需要为 Azure Stack Hub 终结点创建包含 A 记录的子域。 可以使用 **azurestack.northwind.com**。
 
 ### <a name="configure-a-custom-domain-in-azure"></a>在 Azure 中配置自定义域
 
@@ -324,16 +324,16 @@ Web 应用的每个实例都会使用不同的方法连接到 SQL 数据库。 A
 
 3. 在“运算符”下面，选择“大于”。
 
-   - 将“阈值”设置为 **50** 。
-   - 将“持续时间”设置为 **10** 。
+   - 将“阈值”设置为 **50**。
+   - 将“持续时间”设置为 **10**。
 
 #### <a name="action"></a>操作
 
 1. 在“操作”下面，选择“计数增量”。
 
-2. 将“实例计数”设置为 **2** 。
+2. 将“实例计数”设置为 **2**。
 
-3. 将“冷却时间”设置为 **5** 。
+3. 将“冷却时间”设置为 **5**。
 
 4. 选择“添加”   。
 
@@ -358,15 +358,15 @@ Web 应用的每个实例都会使用不同的方法连接到 SQL 数据库。 A
 
 3. 在“运算符”下面，选择“小于”。
 
-   - 将“阈值”设置为 **30** 。
-   - 将“持续时间”设置为 **10** 。
+   - 将“阈值”设置为 **30**。
+   - 将“持续时间”设置为 **10**。
 
 #### <a name="action"></a>操作
 
 1. 在“操作”下面，选择“计数减量”。
 
-   - 将“实例计数”设置为 **1** 。
-   - 将“冷却时间”设置为 **5** 。
+   - 将“实例计数”设置为 **1**。
+   - 将“冷却时间”设置为 **5**。
 
 2. 选择“添加”   。
 
@@ -403,9 +403,9 @@ Web 应用的每个实例都会使用不同的方法连接到 SQL 数据库。 A
 4. 在“添加终结点”中，对 Azure Stack Hub 使用以下设置：
 
    - 对于“类型”，请选择“外部终结点”。
-   - 为终结点输入 **名称** 。
+   - 为终结点输入 **名称**。
    - 对于“完全限定的域名(FQDN)或 IP”，请输入 Azure Stack Hub Web 应用的外部 URL。
-   - 对于“权重”，请保留默认值 **1** 。 如果此终结点处于正常状态，此权重会使所有流量转到此终结点。
+   - 对于“权重”，请保留默认值 **1**。 如果此终结点处于正常状态，此权重会使所有流量转到此终结点。
    - 将“添加为已禁用”保持未选中状态。
 
 5. 选择“确定”保存 Azure Stack Hub 终结点。
@@ -417,11 +417,11 @@ Web 应用的每个实例都会使用不同的方法连接到 SQL 数据库。 A
 3. 在“添加终结点”中，对 Azure 使用以下设置：
 
    - 对于“类型”，请选择“Azure 终结点”。
-   - 为终结点输入 **名称** 。
+   - 为终结点输入 **名称**。
    - 对于“目标资源类型”，请选择“应用服务”。
    - 对于“目标资源”，请选择“选择应用服务”以查看同一订阅中的 Web 应用列表。
    - 在“资源”  中，选取要添加为第一个终结点的应用服务。
-   - 对于“权重”，请选择 **2** 。 如果主要终结点不正常，或者触发的某个规则/警报会重定向流量，则此设置会使所有流量转到此终结点。
+   - 对于“权重”，请选择 **2**。 如果主要终结点不正常，或者触发的某个规则/警报会重定向流量，则此设置会使所有流量转到此终结点。
    - 将“添加为已禁用”保持未选中状态。
 
 4. 选择“确定”保存 Azure 终结点。
@@ -457,7 +457,7 @@ Azure Application Insights 可让你监视应用，并根据配置的条件发�
 
 4. 对于“指标”，请选择“请求速率”。
 5. 对于“条件”，请选择“大于”。
-6. 对于“阈值”，请输入 **2** 。
+6. 对于“阈值”，请输入 **2**。
 7. 对于“时段”，请选择“过去 5 分钟”。
 8. 在“通知方式”下：
    - 选中“电子邮件所有者、参与者和阅读者”对应的复选框。
@@ -478,7 +478,7 @@ Azure Application Insights 可让你监视应用，并根据配置的条件发�
 
 4. 对于“指标”，请选择“请求速率”。
 5. 对于“条件”，请选择“小于”。
-6. 对于“阈值”，请输入 **2** 。
+6. 对于“阈值”，请输入 **2**。
 7. 对于“时段”，请选择“过去 5 分钟”。
 8. 在“通知方式”下：
    - 选中“电子邮件所有者、参与者和阅读者”对应的复选框。

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 4480f51b03082f2a0cbb7f2f213e05b7bf488646
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477280"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895366"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 配置混合云连接
 
@@ -25,7 +25,7 @@ ms.locfileid: "86477280"
 > - 在全局 Azure 中使用云缩放的应用部署和资源时，维护旧系统。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合支柱图](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入你的本地环境，并支持唯一的混合云，以允许你在任何地方构建和部署混合应用。  
 > 
 > [混合应用设计注意事项](overview-app-design-considerations.md)一文回顾了设计、部署和运行混合应用所需的软件质量要素（位置、可伸缩性、可用性、复原能力、可管理性和安全性）。 这些设计注意事项有助于优化混合应用设计，从而最大限度地减少生产环境中的难题。
@@ -37,7 +37,7 @@ ms.locfileid: "86477280"
 ### <a name="azure"></a>Azure
 
 - 如果没有 Azure 订阅，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
-- 在 Azure 中创建 [Web 应用](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts)。 请记下 Web 应用 URL，因为在解决方案中将会用到它。
+- 在 Azure 中创建 [Web 应用](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 请记下 Web 应用 URL，因为在解决方案中将会用到它。
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -47,9 +47,9 @@ Azure OEM/硬件合作伙伴可以部署生产 Azure Stack Hub，并且所有用
    >[!Note]
    >部署 ASDK 最多可能需要 7 个小时，因此请制定相应的计划。
 
-- 将[应用服务](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS 服务部署到 Azure Stack Hub。
-- 在 Azure Stack Hub 环境中[创建计划和套餐](/azure-stack/operator/service-plan-offer-subscription-overview.md)。
-- 在 Azure Stack Hub 环境中[创建租户订阅](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md)。
+- 将[应用服务](/azure-stack/operator/azure-stack-app-service-deploy) PaaS 服务部署到 Azure Stack Hub。
+- 在 Azure Stack Hub 环境中[创建计划和套餐](/azure-stack/operator/service-plan-offer-subscription-overview)。
+- 在 Azure Stack Hub 环境中[创建租户订阅](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm)。
 
 ### <a name="azure-stack-hub-components"></a>Azure Stack Hub 组件
 
@@ -58,7 +58,7 @@ Azure Stack Hub 操作员必须部署应用服务、创建计划和套餐、创�
 此解决方案示例假设你了解 Azure 和 Azure Stack Hub 的一些基本知识。 若要在开始此解决方案之前了解详细信息，请阅读以下文章：
 
 - [Azure 简介](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub 关键概念](/azure-stack/operator/azure-stack-overview.md)
+- [Azure Stack Hub 关键概念](/azure-stack/operator/azure-stack-overview)
 
 ### <a name="before-you-begin"></a>开始之前
 
