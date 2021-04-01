@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ab0eb885e7b0fefaca8991522712652f979d8712
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895306"
 ---
 # <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>适用于 Azure 和 Azure Stack 的混合模式与解决方案示例
 
@@ -49,4 +49,4 @@ Azure Stack 通过实现混合云来为本地环境和 Edge 提供云计算的�
 - 请参阅 [Azure Stack 产品和解决方案系列](/azure-stack)，详细了解产品和解决方案的整个组合。
 - 浏览目录中的“模式”和“解决方案部署指南”部分，以详细了解每种模式和解决方案。
 - 阅读[混合应用设计注意事项](overview-app-design-considerations.md)，以了解设计、部署和操作混合应用时的软件质量要素。
-- [在 Azure Stack 上设置开发环境](/azure-stack/user/azure-stack-dev-start.md)和在 Azure Stack 上[部署第一个应用](/azure-stack/user/azure-stack-dev-start-deploy-app.md)。
+- [在 Azure Stack 上设置开发环境](/azure-stack/user/azure-stack-dev-start)和在 Azure Stack 上[部署第一个应用](/azure-stack/user/azure-stack-dev-start-deploy-app)。

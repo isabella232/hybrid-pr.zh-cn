@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: ed2ad5bed8f4bd80d4a40ab7600842d5544ff97d
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886809"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895408"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 部署可跨云缩放的应用
 
@@ -30,7 +30,7 @@ ms.locfileid: "88886809"
 > - 了解如何监视和跟踪部署。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合支柱图](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入本地环境，并支持唯一的混合云，允许你在任何地方构建和部署混合应用。  
 > 
 > [混合应用设计注意事项](overview-app-design-considerations.md)一文回顾了设计、部署和运行混合应用所需的软件质量要素（位置、可伸缩性、可用性、复原能力、可管理性和安全性）。 这些设计注意事项有助于优化混合应用设计，从而最大限度地减少生产环境中的难题。
@@ -39,16 +39,16 @@ ms.locfileid: "88886809"
 
 - Azure 订阅。 如果需要，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 - Azure Stack Hub 集成系统或 Azure Stack 开发工具包 (ASDK) 的部署。
-  - 有关安装 Azure Stack Hub 的说明，请参阅[安装 ASDK](/azure-stack/asdk/asdk-install.md)。
+  - 有关安装 Azure Stack Hub 的说明，请参阅[安装 ASDK](/azure-stack/asdk/asdk-install)。
   - 有关 ASDK 部署后自动化脚本，请参阅：[https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - 此项安装可能需要几个小时才能完成。
-- 将[应用服务](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS 服务部署到 Azure Stack Hub。
-- 在 Azure Stack Hub 环境中[创建计划/套餐](/azure-stack/operator/service-plan-offer-subscription-overview.md)。
-- 在 Azure Stack Hub 环境中[创建租户订阅](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md)。
+- 将[应用服务](/azure-stack/operator/azure-stack-app-service-deploy) PaaS 服务部署到 Azure Stack Hub。
+- 在 Azure Stack Hub 环境中[创建计划/套餐](/azure-stack/operator/service-plan-offer-subscription-overview)。
+- 在 Azure Stack Hub 环境中[创建租户订阅](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm)。
 - 在租户订阅中创建 Web 应用。 记下新 Web 应用的 URL，供稍后使用。
 - 在租户订阅中部署 Azure Pipelines 虚拟机 (VM)。
 - 需要装有 .NET 3.5 的 Windows Server 2016 VM。 将在 Azure Stack Hub 上的租户订阅中构建此 VM 作为专用生成代理。
-- Azure Stack Hub 市场中提供了[具有 SQL 2017 VM 映像的 Windows Server 2016](/azure-stack/operator/azure-stack-add-vm-image.md)。 如果此映像不可用，请与 Azure Stack Hub 操作员协作，以确保将此映像添加到环境中。
+- Azure Stack Hub 市场中提供了[具有 SQL 2017 VM 映像的 Windows Server 2016](/azure-stack/operator/azure-stack-add-vm-image)。 如果此映像不可用，请与 Azure Stack Hub 操作员协作，以确保将此映像添加到环境中。
 
 ## <a name="issues-and-considerations"></a>问题和注意事项
 
@@ -79,7 +79,7 @@ ms.locfileid: "88886809"
 设置混合持续集成和持续部署 (CI/CD)，以将 Web 应用部署到 Azure 和 Azure Stack Hub，并自动将更改推送到这两个云中。
 
 > [!Note]  
-> 需要在 Azure Stack Hub 上创建适当的合成映像用于运行 Windows Server 和 SQL，并需要部署应用服务。 有关详细信息，请参阅应用服务文档[在 Azure Stack Hub 上部署应用服务的先决条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)。
+> 需要在 Azure Stack Hub 上创建适当的合成映像用于运行 Windows Server 和 SQL，并需要部署应用服务。 有关详细信息，请参阅应用服务文档[在 Azure Stack Hub 上部署应用服务的先决条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)。
 
 ### <a name="add-code-to-azure-repos"></a>向 Azure Repos 中添加代码
 
@@ -91,7 +91,7 @@ Azure Repos
 
     ![连接到 Azure Repos 上的项目](media/solution-deployment-guide-cross-cloud-scaling/image1.JPG)
 
-2. 创建并打开默认 Web 应用以**克隆存储库**。
+2. 创建并打开默认 Web 应用以 **克隆存储库**。
 
     ![在 Azure Web 应用中克隆存储库](media/solution-deployment-guide-cross-cloud-scaling/image2.png)
 
@@ -141,7 +141,7 @@ Azure Pipelines 和 Azure DevOps Services 提供可配置度和可管理度高�
 
    ![设置 Azure 云环境值](media/solution-deployment-guide-cross-cloud-scaling/image8.png)
 
-5. 设置**环境名称**，并选择 Azure 云终结点的 **Azure 订阅**。
+5. 设置 **环境名称**，并选择 Azure 云终结点的 **Azure 订阅**。
 
       ![选择 Azure 云终结点的 Azure 订阅](media/solution-deployment-guide-cross-cloud-scaling/image9.png)
 
@@ -153,13 +153,13 @@ Azure Pipelines 和 Azure DevOps Services 提供可配置度和可管理度高�
 
       ![为 Azure 云托管环境设置代理队列](media/solution-deployment-guide-cross-cloud-scaling/image11.png)
 
-8. 在“部署 Azure 应用服务”菜单中，为环境选择有效的**包或文件夹**。 选择**文件夹位置**旁边的“确定”。
+8. 在“部署 Azure 应用服务”菜单中，为环境选择有效的 **包或文件夹**。 选择 **文件夹位置** 旁边的“确定”。
   
       ![选择 Azure 应用服务环境的包或文件夹](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![选择 Azure 应用服务环境的包或文件夹](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![文件夹选取器对话框 1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
-9. 保存所有更改并返回**发布管道**。
+9. 保存所有更改并返回 **发布管道**。
 
     ![在发布管道中保存更改](media/solution-deployment-guide-cross-cloud-scaling/image14.png)
 
@@ -190,11 +190,11 @@ Azure Pipelines 和 Azure DevOps Services 提供可配置度和可管理度高�
 
     ![选择“Azure Stack 代理”](media/solution-deployment-guide-cross-cloud-scaling/image21.png)
 
-17. 在“部署 Azure 应用服务”部分下，为环境选择有效的**包或文件夹**。 选择文件夹位置旁边的“确定”。
+17. 在“部署 Azure 应用服务”部分下，为环境选择有效的 **包或文件夹**。 选择文件夹位置旁边的“确定”。
 
     ![选择 Azure 应用服务部署的文件夹](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![选择 Azure 应用服务部署的文件夹](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![文件夹选取器对话框 2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. 在“变量”选项卡下添加名为 `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` 的变量，将其值设置为 **true**，将范围设置为 Azure Stack。
 
@@ -211,7 +211,7 @@ Azure Pipelines 和 Azure DevOps Services 提供可配置度和可管理度高�
 21. 保存所有更改。
 
 > [!Note]  
-> 任务的某些设置可能已在从模板创建发布定义时自动定义为[环境变量](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 无法在任务设置中修改这些设置；必须选择父环境项才能编辑这些设置。
+> 任务的某些设置可能已在从模板创建发布定义时自动定义为[环境变量](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)。 无法在任务设置中修改这些设置；必须选择父环境项才能编辑这些设置。
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>通过 Visual Studio 发布到 Azure Stack Hub
 
@@ -242,7 +242,7 @@ Azure Pipelines 和 Azure DevOps Services 提供可配置度和可管理度高�
 ## <a name="develop-the-app-build"></a>开发应用生成
 
 > [!Note]  
-> 需要在 Azure Stack Hub 上创建适当的合成映像用于运行 Windows Server 和 SQL，并需要部署应用服务。 有关详细信息，请参阅[在 Azure Stack Hub 上部署应用服务的先决条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)。
+> 需要在 Azure Stack Hub 上创建适当的合成映像用于运行 Windows Server 和 SQL，并需要部署应用服务。 有关详细信息，请参阅[在 Azure Stack Hub 上部署应用服务的先决条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)。
 
 使用 [Azure 资源管理器模板](https://azure.microsoft.com/resources/templates/)（例如 Azure Repos 中的 Web 应用代码）将内容部署到这两个云。
 
@@ -329,7 +329,7 @@ Azure Pipelines 和 Azure DevOps Services 提供可配置度和可管理度高�
 23. 保存所有更改。
 
 > [!Note]  
-> 根据模板创建发布定义时，发布任务的某些设置会自动定义为[环境变量](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 这些设置不能在任务设置中进行修改，但可以在父环境项中进行修改。
+> 根据模板创建发布定义时，发布任务的某些设置会自动定义为[环境变量](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)。 这些设置不能在任务设置中进行修改，但可以在父环境项中进行修改。
 
 ## <a name="create-a-release"></a>创建发布
 
