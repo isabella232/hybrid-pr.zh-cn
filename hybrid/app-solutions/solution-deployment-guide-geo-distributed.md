@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: 9fa2c351d2c13d85fe1adb17a35e165de96ea2a2
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886826"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895425"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 通过地理分散式应用定向流量
 
@@ -61,7 +61,7 @@ ms.locfileid: "88886826"
 - **应用的命名约定：** 由于将部署多个应用实例，每个部署的应用实例都要有名称。 使用适用于 Power Apps 的应用服务环境，可以在多个环境中使用相同的应用名称。 由于每个应用服务环境都有唯一的域后缀，开发人员可以选择在每个环境中重复使用完全相同的应用名称。 例如，开发人员可以对应用进行如下命名：myapp.foo1.p.azurewebsites.net、myapp.foo2.p.azurewebsites.net、myapp.foo3.p.azurewebsites.net 等  。 对于此处使用的应用，每个应用实例具有唯一的名称。 所用的应用实例名称是 *webfrontend1*、*webfrontend2* 和 *webfrontend3*。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合支柱图](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的扩展。 Azure Stack Hub 将云计算的灵活性和创新性带入你的本地环境，并支持唯一的混合云，以允许你在任何地方构建和部署混合应用。  
 > 
 > [混合应用设计注意事项](overview-app-design-considerations.md)一文回顾了设计、部署和运行混合应用所需的软件质量要素（位置、可伸缩性、可用性、复原能力、可管理性和安全性）。 这些设计注意事项有助于优化混合应用设计，从而最大限度地减少生产环境中的难题。
@@ -97,17 +97,17 @@ ms.locfileid: "88886826"
 设置混合持续集成/持续交付 (CI/CD)，以将 Web 应用部署到 Azure 和 Azure Stack Hub，并自动将更改推送到这两个云中。
 
 > [!Note]  
-> 需要在 Azure Stack Hub 上创建适当的合成映像用于运行 Windows Server 和 SQL，并需要部署应用服务。 有关详细信息，请参阅[在 Azure Stack Hub 上部署应用服务的先决条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)。
+> 需要在 Azure Stack Hub 上创建适当的合成映像用于运行 Windows Server 和 SQL，并需要部署应用服务。 有关详细信息，请参阅[在 Azure Stack Hub 上部署应用服务的先决条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)。
 
 #### <a name="add-code-to-azure-repos"></a>向 Azure Repos 中添加代码
 
-1. 使用在 Azure Repos 上**拥有项目创建权限的帐户**登录到 Visual Studio。
+1. 使用在 Azure Repos 上 **拥有项目创建权限的帐户** 登录到 Visual Studio。
 
     CI/CD 可同时应用到应用代码和基础结构代码。 使用 [Azure 资源管理器模板](https://azure.microsoft.com/resources/templates/)进行专用与托管的云开发。
 
     ![在 Visual Studio 中连接到项目](media/solution-deployment-guide-geo-distributed/image1.JPG)
 
-2. 创建并打开默认 Web 应用以**克隆存储库**。
+2. 创建并打开默认 Web 应用以 **克隆存储库**。
 
     ![在 Visual Studio 中克隆存储库](media/solution-deployment-guide-geo-distributed/image2.png)
 
@@ -117,9 +117,9 @@ ms.locfileid: "88886826"
 
     ![在 Visual Studio 中编辑 Web 应用项目文件](media/solution-deployment-guide-geo-distributed/image3.png)
 
-2. 使用团队资源管理器**将代码签入到 Azure Repos**。
+2. 使用团队资源管理器 **将代码签入到 Azure Repos**。
 
-3. 确认**应用程序代码**已签入到 Azure Repos。
+3. 确认 **应用程序代码** 已签入到 Azure Repos。
 
 ### <a name="create-the-build-definition"></a>创建生成定义
 
@@ -157,7 +157,7 @@ Azure DevOps Services 提供高度可配置、可管理的管道，用于将内�
 
    ![在 Azure DevOps Services 中设置 Azure 云环境值](media/solution-deployment-guide-geo-distributed/image8.png)
 
-5. 设置**环境名称**，并选择 Azure 云终结点的 **Azure 订阅**。
+5. 设置 **环境名称**，并选择 Azure 云终结点的 **Azure 订阅**。
 
       ![在 Azure DevOps Services 中选择 Azure 订阅的 Azure 云终结点](media/solution-deployment-guide-geo-distributed/image9.png)
 
@@ -169,13 +169,13 @@ Azure DevOps Services 提供高度可配置、可管理的管道，用于将内�
 
       ![在 Azure DevOps Services 中为 Azure 云托管环境设置“代理队列”](media/solution-deployment-guide-geo-distributed/image11.png)
 
-8. 在“部署 Azure 应用服务”菜单中，为环境选择有效的**包或文件夹**。 选择**文件夹位置**旁边的“确定”。
+8. 在“部署 Azure 应用服务”菜单中，为环境选择有效的 **包或文件夹**。 选择 **文件夹位置** 旁边的“确定”。
   
       ![在 Azure DevOps Services 中为 Azure App Service 环境选择包或文件夹](media/solution-deployment-guide-geo-distributed/image12.png)
 
-      ![在 Azure DevOps Services 中为 Azure App Service 环境选择包或文件夹](media/solution-deployment-guide-geo-distributed/image13.png)
+      ![文件夹选取器对话框 1](media/solution-deployment-guide-geo-distributed/image13.png)
 
-9. 保存所有更改并返回**发布管道**。
+9. 保存所有更改并返回 **发布管道**。
 
     ![在 Azure DevOps Services 中保存发布管道中的更改](media/solution-deployment-guide-geo-distributed/image14.png)
 
@@ -208,11 +208,11 @@ Azure DevOps Services 提供高度可配置、可管理的管道，用于将内�
 
     ![在 Azure DevOps Services 中选择 Azure Stack Hub 代理名称](media/solution-deployment-guide-geo-distributed/image21.png)
 
-17. 在“部署 Azure 应用服务”部分下，为环境选择有效的**包或文件夹**。 选择文件夹位置旁边的“确定”。
+17. 在“部署 Azure 应用服务”部分下，为环境选择有效的 **包或文件夹**。 选择文件夹位置旁边的“确定”。
 
     ![在 Azure DevOps Services 中为 Azure 应用服务部署选择文件夹](media/solution-deployment-guide-geo-distributed/image22.png)
 
-    ![在 Azure DevOps Services 中为 Azure 应用服务部署选择文件夹](media/solution-deployment-guide-geo-distributed/image23.png)
+    ![文件夹选取器对话框 2](media/solution-deployment-guide-geo-distributed/image23.png)
 
 18. 在“变量”选项卡下添加名为 `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` 的变量，将其值设置为 **true**，将范围设置为 Azure Stack Hub。
 
@@ -229,7 +229,7 @@ Azure DevOps Services 提供高度可配置、可管理的管道，用于将内�
 21. 保存所有更改。
 
 > [!Note]  
-> 任务的某些设置可能已在从模板创建发布定义时自动定义为[环境变量](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 无法在任务设置中修改这些设置；必须选择父环境项才能编辑这些设置。
+> 任务的某些设置可能已在从模板创建发布定义时自动定义为[环境变量](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)。 无法在任务设置中修改这些设置；必须选择父环境项才能编辑这些设置。
 
 ## <a name="part-2-update-web-app-options"></a>第 2 部分：更新 Web 应用选项
 
@@ -239,7 +239,7 @@ Azure DevOps Services 提供高度可配置、可管理的管道，用于将内�
 
 > [!div class="checklist"]
 > - 将现有的自定义 DNS 名称映射到 Azure Web 应用。
-> - 使用 **CNAME 记录**和 **A 记录**将自定义 DNS 名称映射到应用服务。
+> - 使用 **CNAME 记录** 和 **A 记录** 将自定义 DNS 名称映射到应用服务。
 
 ### <a name="map-an-existing-custom-dns-name-to-azure-web-apps"></a>将现有的自定义 DNS 名称映射到 Azure Web 应用
 
@@ -463,7 +463,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 出现提示时，请定义导出密码，以便稍后将 SSL 证书上传到应用服务。
 
-如果使用 IIS 或 **Certreq.exe** 生成证书请求，请将证书安装到本地计算机，然后[将证书导出为 PFX](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11))。
+如果使用 IIS 或 **Certreq.exe** 生成证书请求，请将证书安装到本地计算机，然后 [将证书导出为 PFX](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11))。
 
 #### <a name="upload-the-ssl-certificate"></a>上传 SSL 证书
 
@@ -492,7 +492,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 2. 在“添加 SSL 绑定”页中，使用下拉列表选择要保护的域名，然后选择要使用的证书。
 
-3. 在“SSL 类型”中，选择是要使用 [**服务器名称指示 (SNI)** ](https://en.wikipedia.org/wiki/Server_Name_Indication) 还是使用基于 IP 的 SSL。
+3. 在“SSL 类型”中，选择是要使用 [**服务器名称指示 (SNI)**](https://en.wikipedia.org/wiki/Server_Name_Indication) 还是使用基于 IP 的 SSL。
 
     - **基于 SNI 的 SSL**：可添加多个基于 SNI 的 SSL 绑定。 选择此选项可以使用多个 SSL 证书来保护同一 IP 地址上的多个域。 大多数新式浏览器（包括 Internet Explorer、Chrome、Firefox 和 Opera）都支持 SNI（在[服务器名称指示](https://wikipedia.org/wiki/Server_Name_Indication)中了解更全面的浏览器支持信息）。
 
@@ -561,9 +561,9 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
     3. 在“订阅”中，选择要在其下创建此配置文件的订阅。
 
-    4. 在**资源组**中，创建新的资源组，以在其下放置此配置文件。
+    4. 在 **资源组** 中，创建新的资源组，以在其下放置此配置文件。
 
-    5. 在**资源组位置**中，选择资源组的位置。 此设置指的是资源组的位置，对全局部署的流量管理器配置文件没有影响。
+    5. 在 **资源组位置** 中，选择资源组的位置。 此设置指的是资源组的位置，对全局部署的流量管理器配置文件没有影响。
 
     6. 选择“创建”。
 
