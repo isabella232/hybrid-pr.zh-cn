@@ -9,10 +9,16 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/09/2021
+  ms.date: 06/11/2021
   ms.custom: e2e-hybrid
 highlightedContent:
   items:
+    - title: Build 2021：混合功能研讨会
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid'
+    - title: Build 2021：Arc 研讨会
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "'
     - title: Ignite 2021：混合功能研讨会
       itemType: video
       url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid'
@@ -31,12 +37,6 @@ highlightedContent:
     - title: Azure Modular Data Center 简介
       itemType: video
       url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
-    - title: Inspire 2020：Azure Stack HCI 的新增功能
-      itemType: video
-      url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
-    - title: Build 2020：混合会议
-      itemType: video
-      url: 'https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D'
 productDirectory:
   title: Azure 混合和多云平台
   summary: 用于构建和运营混合与多云解决方案的平台。
@@ -317,6 +317,22 @@ additionalContent:
               text: Azure Stack 混合应用简介
             - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
               text: 从 Azure Stack Hub 动态缩放到 Azure
+            - url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
+              text: Azure Stack HCI 的新增功能
+        - title: 开发和集成
+          links:
+            - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
+              text: Azure Stack 混合应用简介
+            - url: 'https://mybuild.microsoft.com/sessions/2debfc2e-f0b3-4adf-bcec-d126930f806f'
+              text: 生成在任何位置运行的云原生应用程序
+            - url: 'https://mybuild.microsoft.com/sessions/9f56bc10-30bd-42e2-afc8-b61b22260c49'
+              text: 利用 Azure Arc 构建一致的混合多云应用程序（咨询专家）
+            - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
+              text: 从 Azure Stack Hub 动态缩放到 Azure
+            - url: 'https://mybuild.microsoft.com/sessions/92bd3e12-fbf4-4278-b68f-fe776b02adfa'
+              text: 逻辑应用：为集成的未来提供动力
+            - url: 'https://mybuild.microsoft.com/sessions/76ebac39-517d-44da-a58e-df4193b5efa9'
+              text: 通过 .NET 开发新式应用程序的未来
         - title: Microsoft Edge
           links:
             - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
