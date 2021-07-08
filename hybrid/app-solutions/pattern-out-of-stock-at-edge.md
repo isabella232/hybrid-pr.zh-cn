@@ -3,16 +3,16 @@ title: 使用 Azure 和 Azure Stack Edge 进行缺货检测
 description: 了解如何使用 Azure 和 Azure Stack Edge 服务实现缺货检测。
 author: BryanLa
 ms.topic: article
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 865f63bc4234e50ed169aa29cefdb1886750594c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: b25a6391c4e64fa7018031bac4fb7d098c56b529
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909955"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343869"
 ---
 # <a name="out-of-stock-detection-at-the-edge-pattern"></a>边缘缺货检测模式
 
@@ -47,7 +47,7 @@ ms.locfileid: "84909955"
 | 层 | 组件 | 说明 |
 |----------|-----------|-------------|
 | 本地硬件 | 网络摄像头 | 需要一个网络摄像头，并配合 HTTP 或 RTSP 源提供用于推理的图像。 |
-| Azure | Azure IoT 中心 | [Azure IoT 中心](/azure/iot-hub/)为边缘设备处理设备预配和消息传递。 |
+| Azure | Azure IoT 中心 | [Azure IoT 中心](/azure/iot-hub/)处理设备预配以及边缘设备的消息传递。 |
 |  | Azure Time Series Insights | [Azure 时序见解](/azure/time-series-insights/)存储来自 IoT 中心的消息用于可视化。 |
 |  | Power BI | [Microsoft Power BI](https://powerbi.microsoft.com/) 提供缺货事件的以业务为中心的报表。 Power BI 提供易用的仪表板界面用于查看 Azure 流分析的输出。 |
 | Azure Stack Edge 或<br>Azure IoT Edge 设备 | Azure IoT Edge | [Azure IoT Edge](/azure/iot-edge/) 协调本地容器的运行时，并处理设备管理和更新。|
@@ -77,8 +77,8 @@ ms.locfileid: "84909955"
 
 若要详细了解本文中介绍的主题：
 - 本模式中使用了多个 IoT 相关服务，包括 [Azure IoT Edge](/azure/iot-edge/)、[Azure IoT 中心](/azure/iot-hub/)和 [Azure 时序见解](/azure/time-series-insights/)。
-- 若要了解有关 Microsoft Project 脑电波的详细信息，请参阅[博客公告](https://blogs.microsoft.com/ai/build-2018-project-brainwave/)和签出[Azure 加速机器学习与 Project 脑电波视频](https://www.youtube.com/watch?v=DJfMobMjCX0)。
+- 若要详细了解 Microsoft Project Brainwave，请参阅[博客公告](https://blogs.microsoft.com/ai/build-2018-project-brainwave/)并观看[通过 Project Brainwave 实现 Azure 加速机器学习视频](https://www.youtube.com/watch?v=DJfMobMjCX0)。
 - 请参阅[混合应用设计注意事项](overview-app-design-considerations.md)，了解有关最佳做法的详细信息，并获取对其他任何问题的解答。
 - 请参阅 [Azure Stack 产品和解决方案系列](/azure-stack)，详细了解产品和解决方案的整个阵容。
 
-准备好测试解决方案示例时，请继续阅读[分层式数据分析解决方案部署指南](https://aka.ms/edgeinferencingdeploy)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。
+准备好测试解决方案示例后，请继续查看 [Edge 机器学习推理解决方案部署指南](https://aka.ms/edgeinferencingdeploy)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。
