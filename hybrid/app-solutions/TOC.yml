@@ -33,29 +33,29 @@
 - name: 解决方案部署指南
   items:
     - name: 跨云缩放
-      href: solution-deployment-guide-cross-cloud-scaling.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
     - name: 跨云缩放（本地数据）
-      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
     - name: DevOps 混合 CI/CD
       href: 'https://aka.ms/hybriddevopsdeploy'
     - name: 客流量检测（零售）
-      href: solution-deployment-guide-retail-footfall-detection.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
     - name: 地区分布式应用
-      href: solution-deployment-guide-geo-distributed.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
     - name: 高可用性 Kubernetes 群集
-      href: solution-deployment-guide-highly-available-kubernetes.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
     - name: 混合连接
-      href: solution-deployment-guide-connectivity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity
     - name: 混合标识
-      href: solution-deployment-guide-identity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity
     - name: 混合中继
       href: 'https://aka.ms/hybridrelaydeployment'
     - name: 分层数据
       href: 'https://aka.ms/tiereddatadeploy'
     - name: 高可用性 MongoDB
-      href: solution-deployment-guide-mongodb-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha
     - name: 高可用性 SQL Server 2016
-      href: solution-deployment-guide-sql-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha
     - name: 在边缘脱销
       href: 'https://aka.ms/edgeinferencingdeploy'
     - name: 在边缘培训 ML 模型

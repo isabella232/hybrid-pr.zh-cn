@@ -9,12 +9,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 388cfb13249491275d7223415f26f20c17fe8f54
-  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+  ms.openlocfilehash: acdd50bcc56ead2e56af84850dcfe66697cf8ee1
+  ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/09/2020
-  ms.locfileid: "96901535"
+  ms.lasthandoff: 08/17/2021
+  ms.locfileid: "122281187"
 landingContent:
 - title: 关于混合与多云模式和解决方案
   linkLists:
@@ -43,13 +43,13 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 跨云缩放
-      url: solution-deployment-guide-cross-cloud-scaling.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
     - text: DevOps 混合 CI/CD
       url: https://aka.ms/hybriddevopsdeploy
     - text: 客流量检测（零售）
-      url: solution-deployment-guide-retail-footfall-detection.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
     - text: 地区分布式应用
-      url: solution-deployment-guide-geo-distributed.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
 - title: 零售客流量检测场景
   linkLists:
   - linkListType: architecture
@@ -59,7 +59,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 解决方案部署指南
-      url: solution-deployment-guide-retail-footfall-detection.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
 - title: 使用本地数据方案进行跨云缩放
   linkLists:
   - linkListType: architecture
@@ -69,7 +69,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 解决方案部署指南
-      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
 - title: 高可用的 Kubernetes 群集方案
   linkLists:
   - linkListType: architecture

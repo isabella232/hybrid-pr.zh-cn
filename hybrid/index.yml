@@ -295,15 +295,15 @@ additionalContent:
               text: 高可用的 Kubernetes 群集
         - title: 部署应用解决方案示例
           links:
-            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
               text: 跨云缩放
             - url: 'https://aka.ms/hybriddevopsdeploy'
               text: DevOps 混合 CI/CD
-            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
               text: 客流量检测（零售）
-            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
               text: 地区分布式应用
-            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
               text: 高可用的 Kubernetes 群集
     - title: 评估和学习资源
       items:
