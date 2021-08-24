@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.openlocfilehash: 79fb39d418bed53ef6a78980fcd9188bdf6e57ae
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895323"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281272"
 ---
 # <a name="footfall-detection-pattern"></a>客流量检测模式
 
@@ -88,4 +88,4 @@ Contoso 想找到一种不引人注目且不侵犯隐私的方式来确定其客
 - 请参阅[分层数据模式](https://aka.ms/tiereddatadeploy)，客流量检测模式使用该模式。
 - 有关使用自定义视觉的详细信息，请参阅[自定义视觉 AI 开发工具包](https://azure.github.io/Vision-AI-DevKit-Pages/)。 
 
-准备好测试解决方案示例时，请阅读[客流量检测部署指南](solution-deployment-guide-retail-footfall-detection.md)并继续操作。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。
+准备好测试解决方案示例时，请阅读[客流量检测部署指南](/azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection)并继续操作。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。

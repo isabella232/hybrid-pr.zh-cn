@@ -7,12 +7,12 @@ ms.date: 12/03/2020
 ms.author: bryanla
 ms.reviewer: bryanla
 ms.lastreviewed: 12/03/2020
-ms.openlocfilehash: 454cc0a0531882b7a8ec050a461420ce13eebcfe
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+ms.openlocfilehash: f8a733bcdab871695e552ec687d42e3ff4230490
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96911998"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281306"
 ---
 # <a name="high-availability-kubernetes-cluster-pattern"></a>高可用性 Kubernetes 群集模式
 
@@ -127,9 +127,9 @@ Kubernetes 群集本身由 Azure (Stack) IaaS 组件（包括计算、存储和�
 
     缩放是使用最初用于部署 Kubernetes 群集的 AKS 引擎帮助程序 VM 手动完成的。 有关详细信息，请参阅[缩放 Kubernetes 群集](https://github.com/Azure/aks-engine/blob/master/docs/topics/scale.md)
 
-- **配额** - 请考虑在 Azure Stack Hub 上计划 AKS 部署时所配置的[配额](/azure-stack/operator/azure-stack-quota-types)。 请确保每个[订阅](/azure-stack/operator/service-plan-offer-subscription-overview)都具有适当计划并配置了配额。 订阅将需要容纳群集横向扩展所需的计算、存储和其他服务的数量。
+- **配额** - 请考虑在 Azure Stack Hub 上计划 AKS 部署时所配置的 [配额](/azure-stack/operator/azure-stack-quota-types)。 请确保每个[订阅](/azure-stack/operator/service-plan-offer-subscription-overview)都具有适当计划并配置了配额。 订阅将需要容纳群集横向扩展所需的计算、存储和其他服务的数量。
 
-- **应用程序工作负载** - 请参阅 Azure Kubernetes 服务的 Kubernetes 核心概念中的[群集和工作负载概念](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools)。 本文将帮助你根据应用程序的计算和内存需求来确定合适的 VM 大小。  
+- **应用程序工作负载** - 请参阅 Azure Kubernetes 服务的 Kubernetes 核心概念中的 [群集和工作负载概念](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools)。 本文将帮助你根据应用程序的计算和内存需求来确定合适的 VM 大小。  
 
 **应用程序（应用程序级别）**
 
@@ -394,4 +394,4 @@ Azure 和 Azure Stack Hub 公开相同的 Azure 资源管理器 REST API。 这�
 - Azure Stack Hub 中的[跨云缩放](pattern-cross-cloud-scale.md)和[地理分布式应用模式](pattern-geo-distributed.md)。
 - [Azure Kubernetes 服务 (AKS) 上的微服务体系结构](/azure/architecture/reference-architectures/microservices/aks)。
 
-准备好测试解决方案示例时，请继续学习[高可用性 Kubernetes 群集部署指南](solution-deployment-guide-highly-available-kubernetes.md)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。
+准备好测试解决方案示例时，请继续学习[高可用性 Kubernetes 群集部署指南](/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。

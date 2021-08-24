@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: a830f96e97c347cbbcc09a1b17f4836ecb6eb3e6
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 90e0c177b5eaee4d223b4613e0b2ddf385fa799c
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909947"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281255"
 ---
 # <a name="cross-cloud-scaling-pattern"></a>跨云缩放模式
 
@@ -123,4 +123,4 @@ ms.locfileid: "84909947"
 - 请参阅[混合应用程序设计注意事项](overview-app-design-considerations.md)以了解有关最佳做法的详细信息，并获取其他问题的解答。
 - 请参阅 [Azure Stack 产品和解决方案系列](/azure-stack)，详细了解产品和解决方案的整个阵容。
 
-准备好测试解决方案示例时，请继续阅读[跨云缩放解决方案部署指南](solution-deployment-guide-cross-cloud-scaling.md)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。 其中还介绍了如何创建可提供手动触发过程的跨云解决方案，以便从 Azure Stack Hub 托管的 Web 应用切换到 Azure 托管的 Web 应用。 此外，介绍了如何通过流量管理器使用自动缩放功能，来确保在承受负载的情况下保持云设施的灵活性和可伸缩性。
+准备好测试解决方案示例时，请继续阅读[跨云缩放解决方案部署指南](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。 其中还介绍了如何创建可提供手动触发过程的跨云解决方案，以便从 Azure Stack Hub 托管的 Web 应用切换到 Azure 托管的 Web 应用。 此外，介绍了如何通过流量管理器使用自动缩放功能，来确保在承受负载的情况下保持云设施的灵活性和可伸缩性。
