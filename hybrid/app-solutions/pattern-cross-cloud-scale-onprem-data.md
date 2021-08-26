@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: edbb608fbf8e5288f29572bfe4cca98ffb3cb8fc
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 5c8e3adb621ae4322bf6d60792fc307dbb24ff90
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84909946"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281238"
 ---
 # <a name="cross-cloud-scaling-on-premises-data-pattern"></a>跨云缩放（本地数据）模式
 
@@ -39,7 +39,7 @@ ms.locfileid: "84909946"
 | Azure | Azure 应用服务 | [Azure 应用服务](/azure/app-service/)可让你生成和托管 Web 应用、RESTful API 应用和 Azure Functions。 相关应用全都以所选的编程语言编写，无需管理基础结构。 |
 | | Azure 虚拟网络| [Azure 虚拟网络 (VNet)](/azure/virtual-network/virtual-networks-overview) 是 Azure 中专用网络的基本构建块。 VNet 允许多种类型的 Azure 资源（例如虚拟机 [VM]）以安全方式彼此通信、与 Internet 通信，以及与本地网络通信。 该解决方案还演示了其他网络组件的用法：<br>- 应用和网关子网。<br>- 本地网络网关。<br>- 充当站点到站点 VPN 网关连接的虚拟网络网关。<br>- 公共 IP 地址。<br>- 点到站点 VPN 连接。<br>- 用于托管 DNS 域和提供名称解析的 Azure DNS。 |
 | | Azure 流量管理器 | [Azure 流量管理器](/azure/traffic-manager/traffic-manager-overview)是基于 DNS 的流量负载均衡器。 使用它可以控制用户流量在不同数据中心内的服务终结点上的分布。 |
-| | Azure Application Insights | [Application Insights](/azure/azure-monitor/app/app-insights-overview)是用于在多个平台上构建和管理应用程序的 web 开发人员的可扩展应用程序性能管理服务。|
+| | Azure Application Insights | [Application Insights](/azure/azure-monitor/app/app-insights-overview) 是可扩展的应用程序性能管理服务，可让 Web 开发人员在多个平台上生成和管理应用。|
 | | Azure Functions | [Azure Functions](/azure/azure-functions/) 用于在无服务器环境中执行代码，无需先创建 VM 或发布 Web 应用。 |
 | | Azure 自动缩放 | [自动缩放](/azure/azure-monitor/platform/autoscale-overview)是云服务、VM 和 Web 应用的内置功能。 当需求有变化时，应用可通过此功能来发挥最佳性能。 应用将会根据流量高峰进行调整，在指标有变化时发出通知，并可按需缩放。 |
 | Azure Stack Hub | IaaS 计算 | Azure Stack Hub 可让你使用 Azure 支持的相同应用模型、自助门户和 API。 Azure Stack Hub IaaS 允许使用各种开源技术来实现一致的混合云部署。 例如，解决方案示例使用 Windows Server VM 来部署 SQL Server。|
@@ -133,8 +133,8 @@ Azure Stack Hub 让你可在多个国家/地区运行相同的服务，就像使
 
 若要详细了解本文中介绍的主题：
 
-- 有关如何使用此模式的概述，请观看在[数据中心和公有云之间动态缩放应用](https://www.youtube.com/watch?v=2lw8zOpJTn0)。
+- 观看[在数据中心与公有云之间动态缩放应用](https://www.youtube.com/watch?v=2lw8zOpJTn0)，大致了解如何使用此模式。
 - 请参阅[混合应用设计注意事项](overview-app-design-considerations.md)，了解有关最佳做法的详细信息，并获取对你可能遇到的其他问题的解答。
 - 此模式使用 Azure Stack 产品系列，包括 Azure Stack Hub。 请参阅 [Azure Stack 产品和解决方案系列](/azure-stack)，了解有关整个产品和解决方案组合的详细信息。
 
-准备好测试解决方案示例时，请继续阅读[跨云缩放（本地数据）解决方案部署指南](solution-deployment-guide-cross-cloud-scaling-onprem-data.md)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。
+准备好测试解决方案示例时，请继续阅读[跨云缩放（本地数据）解决方案部署指南](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data)。 该部署指南逐步说明了如何部署和测试 Azure Stack 的组件。
